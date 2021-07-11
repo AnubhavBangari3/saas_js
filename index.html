@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Job</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFMmisktNUQkjEtNua7wkjM8HC0NihaNkbfg&usqp=CAU">
+                <span>Jobs</span>
+            </div>
+        </div>
+
+
+    </header>
+    <div class="search">
+        <div class="search-container">
+            <div class="input-container">
+                <i class="fa fa-search"></i>
+                <input type="text" id="job-filter" name="job-filter" placeholder="Find your passion">
+            </div>
+            <div class="button-container">
+                <span>Find Job</span>
+            </div>
+        </div>
+    </div>
+    <div class="job-list">
+        <h1>15 Jobs</h1>
+        <div class="job-container">
+            <div class="job-tile">
+
+                <div class="top">
+                    <img src="data:image/png;base64,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">
+                </div>
+                <div class="rolename">
+                    <span>Role</span>
+                </div>
+                <div class="description">
+                    <span>description of job</span>
+                </div>
+                <div class="buttons">
+                    <div class="button apply-now">Apply Now</div>
+                    <div class="button">Message</div>
+                </div>
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+            <div class="job-tile">
+                one
+            </div>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: whitesmoke;
+            font-size: 20px;
+            background-color: black;
+        }
+        
+        header {
+            background-color: black;
+            display: flex;
+        }
+        
+        .header-container {
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            max-width: 60%;
+        }
+        
+        .logo img {
+            border-radius: 50%;
+            height: 60px;
+        }
+        
+        .header-container.logo img {
+            width: 60px;
+            height: 100%;
+        }
+        
+        .search {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 25px;
+            max-width: 1250px;
+            border: 2px solid black;
+        }
+        
+        .search-container {
+            display: flex;
+            width: 100%;
+        }
+        
+        .input-container {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            flex-grow: 1;
+        }
+        
+        .input-container input {
+            flex-grow: 1;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+            border: 2px solid white;
+        }
+        
+        .input-container i {
+            font-size: 20px;
+        }
+        
+        .button-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: lightblue;
+            width: 100px;
+            border: 1px solid brown;
+            cursor: pointer;
+            transition: all 0.3 ease;
+        }
+        
+        .button-container:hover {
+            background-color: blue;
+        }
+        
+        .job-list {
+            max-width: 1250px;
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 5px 20px;
+        }
+        
+        .job-list h1 {
+            font-size: 25px;
+        }
+        
+        .job-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 30px;
+            flex-grow: 1;
+        }
+        
+        .job-tile {
+            background-color: darkcyan;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            transition: transform 0.3 ease;
+        }
+        
+        .job-tile:hover {
+            transform: scale(1.05);
+        }
+        
+        .top {}
+        
+        .top img {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .rolename {
+            padding: 20px 5px;
+        }
+        
+        .rolename span {
+            font-size: 22px;
+        }
+        
+        .description {
+            padding: 20px 5px;
+            height: 105px;
+            overflow: hidden;
+            font-size: 18px;
+            color: darkred;
+            flex-grow: 1;
+        }
+        
+        .buttons {
+            margin-top: 14px;
+            display: flex;
+            justify-content: space-between;
+            height: 40px;
+        }
+        
+        .button {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        
+        .apply-now {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+        }
+        
+        button:nth-child(2) {
+            color: white;
+            background-color: darkorchid;
+            padding: 5px;
+        }
+        
+        @media screen and (max-width: 930px) {
+            .job-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .job-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
